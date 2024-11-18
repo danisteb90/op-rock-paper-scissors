@@ -30,7 +30,7 @@ const getHumanChoice = () => {
 
 const playRound = (humanChoice, computerChoice) => {
 	if (humanChoice === computerChoice) {
-		console.log(
+		alert(
 			`Empate. Ronda: ${numberOfRounds} Puntuación: Humano ${humanScore} - Computadora ${computerScore}`
 		);
 	} else if (
@@ -39,12 +39,12 @@ const playRound = (humanChoice, computerChoice) => {
 		(humanChoice === "scissor" && computerChoice === "paper")
 	) {
 		humanScore++;
-		console.log(
+		alert(
 			`Has ganado esta ronda. Ronda: ${numberOfRounds} Puntuación: Humano ${humanScore} - Computadora ${computerScore}`
 		);
 	} else {
 		computerScore++;
-		console.log(
+		alert(
 			`Has perdido esta ronda. Ronda: ${numberOfRounds} Puntuación: Humano ${humanScore} - Computadora ${computerScore}`
 		);
 	}
